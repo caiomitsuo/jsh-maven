@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class ComandoPrompt {
-    
+
     public ComandoPrompt(String command) {
         //ESCREVA AQUI SEU CODIGO PARA ESTRUTURAR O COMANDO RECEBIDO DO PROMPT.
         nome = command;
         argumentos = (command.split(" "));
     }
-    public String getNome() { 
+    public String getNome() {
 
         return nome;
     }
@@ -18,7 +18,7 @@ public class ComandoPrompt {
 
         return Collections.unmodifiableList(Arrays.asList(argumentos));
     }
-    
+
     private final String nome;
     private final String[] argumentos;
 }
